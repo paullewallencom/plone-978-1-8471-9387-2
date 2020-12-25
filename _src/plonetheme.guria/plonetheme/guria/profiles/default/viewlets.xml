@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<object>
+  <order manager="plone.portaltop" skinname="Guria Theme for the Plone Theming Book" based-on="Plone Default">
+	<viewlet name="plone.searchbox" />
+	<viewlet name="plone.personal_bar" />
+  </order>
+  <order manager="plone.contentviews" skinname="Guria Theme for the Plone Theming Book" based-on="Plone Default">
+	<viewlet name="plone.path_bar" />
+  </order>
+  <hidden manager="plone.portaltop" skinname="Guria Theme for the Plone Theming Book">
+	<viewlet name="plone.path_bar" />
+  </hidden>
+  <hidden manager="plone.portalheader" skinname="Guria Theme for the Plone Theming Book">
+    <viewlet name="plone.searchbox" />
+	<viewlet name="plone.global_sections" />
+  </hidden>
+</object>

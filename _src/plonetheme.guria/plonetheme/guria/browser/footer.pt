@@ -1,0 +1,38 @@
+<div class="vcard"
+     id="portal-footer"
+     metal:define-macro="portal_footer"
+     i18n:domain="plone">
+
+        <tal:comment tal:condition="nothing">
+            Use hCard formatting for contact info.  See
+            http://microformats.org/wiki/hcard for more.
+        </tal:comment>
+
+    <div class="fn org hiddenStructure"
+         i18n:translate="footer_txt_org_name">
+        ORGANIZATION'S NAME GOES HERE!!!  It will be hidden by CSS; we need it 
+        only for hCard compliance. This should be filled in if you use this theme for your site.
+    </div>
+    
+    <div class="adr">
+        <span class="street-address"
+              i18n:translate="footer_txt_addr">123 Street Road</span>,
+        <span class="extended-address"
+              i18n:translate="footer_txt_ext_addr">Suite 321</span>,
+        <span class="locality"
+              i18n:translate="footer_txt_city">Springfield</span>, 
+        <span class="region"
+              i18n:translate="footer_txt_province">OR</span>
+        <span class="postal-code"
+              i18n:translate="footer_txt_postal_code">12345</span>
+    </div>
+
+    <span class="tel"
+          i18n:translate="footer_txt_phone">(503) 555-8272</span> : 
+
+    <span class="email"><span tal:replace="structure python:here.spamProtect('info@enviro-group.org')">
+        [spam protected email addr]
+    </span></span>
+
+
+</div>

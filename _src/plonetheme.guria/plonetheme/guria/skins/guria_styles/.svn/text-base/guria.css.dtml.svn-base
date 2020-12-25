@@ -1,0 +1,426 @@
+/*
+  This file is based on the ploneCustom.css.dtml file shipped with Plone.
+
+  <dtml-with base_properties> (do not remove this)
+  <dtml-call "REQUEST.set('portal_url', portal_url())"> (not this either)
+*/
+
+/* YOUR CSS RULES START HERE */
+
+#visual-portal-wrapper {
+	width:733px;
+	padding:10px;
+	background-color:#fff;
+	margin:60px auto auto auto;
+}
+
+h1 {
+	background: &dtml-backgroundColor;;
+	color:#fff;
+	padding:5px;
+}
+
+h2 {
+	border-bottom:1px dotted #56492e;
+}
+
+.documentContent {
+	padding:0em .25em .25em .25em !important;
+	background-color:#fff;
+}
+
+.documentActions li {
+	background-color:#fff;
+}
+
+legend {
+	background-color:transparent;
+}
+
+/****** COLUMNS *******/
+
+#portal-columns {
+	margin-top:5px;
+	padding:5px;
+	background-color:#fff;
+}
+
+#portal-column-one {
+	background-color:#9d8d6b;
+}
+
+#portal-column-one .visualPadding {
+	padding:0em 0em 0em 0em;
+}
+
+#portal-column-two {
+	background-color:#fff;
+}
+
+#portal-column-two .visualPadding {
+	padding:0em;
+}
+
+#portal-column-content {
+	padding:0em;
+}
+
+/****** HEADER AREA *******/
+
+#portal-header {
+	background-image:url(&dtml-portal_url;/homepage_banner.jpg);
+	background-position:bottom right;
+	background-repeat:no-repeat;
+	height:176px;
+	width:733px;
+	position:relative;
+	padding-top:3px;
+}
+
+#portal-logo {
+	height:176px;
+	width:190px;
+	background-color:#94582e;
+	float:left;
+}
+
+#portal-logo img {
+	margin:90px 0em 0em 0em;
+	float:left;
+}
+
+.description {
+	color:#fff;
+	position:absolute;
+	top:155px;
+	left:10px;
+	font-size:140%;
+}
+
+/**** SITE ACTIONS ****/
+
+#portal-siteactions {
+	background-color:#56492e;
+	padding:5px 0em;
+	text-align:right;
+	position:absolute;
+	width:534px;
+	margin-left:199px;
+	margin-top:-1px;
+}
+
+* html #portal-siteactions {
+	margin-left:5px;
+	margin-top:0px;
+}
+
+*+html #portal-siteactions {
+	margin-left:9px;
+	margin-top:0px;
+}
+
+#portal-siteactions li {
+	border:none;
+}
+
+#portal-siteactions li a {
+	color:#fff;
+	border-width:0px 1px 0px 0px;
+	border-style:solid;
+	border-color:#fff;
+	padding-right:15px;
+	padding-left:15px;
+	text-transform:uppercase;
+}
+
+#portal-siteactions li.last-action a {
+	border-width:0;
+}
+
+#portal-siteactions li a:hover {
+	border-width:0px 1px 0px 0px;
+	border-color:#fff;
+	background-color:transparent;
+}
+
+#portal-siteactions li.last-action a:hover {
+	border-width:0;
+}
+
+/***** TOP NAVIGATION *****/
+
+#portal-globalnav {
+	background-color:#94582e;
+}
+
+#portal-globalnav li {
+	border:none !important;
+	background-color:transparent;
+}
+
+#portal-globalnav li a {
+	color:#fff;
+}
+
+/****** SEARCHBOX ******/
+
+#portal-searchbox {
+	position:relative;
+	z-index:20;
+	opacity:1;
+	padding:0px 0px 0px 5px;
+	margin-right:0px;
+	margin-top:-40px;
+	float:right;
+}
+
+* html #portal-searchbox {
+	overflow:visible !important;
+}
+
+.searchSection {
+	display:none;
+}
+
+input.searchButton {
+	background-color:transparent;
+	background-image:none;
+	border:0;
+	padding:1px;
+}
+
+#searchGadget {
+	padding:3px 0px;
+}
+
+.LSIEFix  {
+	background-color:#fff;
+}
+
+.LSRow {
+	border:0px;
+}
+
+legend#livesearchLegend {
+	background-color:#fff;
+}
+
+/**** BASE PORTLET STYLES ****/
+
+.portlet {
+	border:none;
+	background-color:#bcb29c;
+	margin-bottom:0em;
+	margin-top:0px;
+}
+
+.portlet a {
+	color:#fff !important;
+}
+
+.portletHeader {
+	background-color:#807554 !important;
+	border:none;
+	text-transform:uppercase;
+	color:#fff;
+	padding:.5em .5em .5em 1em;
+}
+
+.portletHeader a {
+	background-color:#807554;
+	border:none;
+	text-transform:uppercase;
+	color:#fff;
+}
+
+.managedPortlet .portletHeader, .managedPortlet .portletHeader a {
+	color:#000;
+}
+
+.portletHeader a {
+	color:#fff;
+}
+
+.portletFooter {
+	border:none;
+}
+
+.portletItem {
+	background-color:none;
+	border:none;
+}
+
+/**** PERSONAL TOOLS ****/
+
+#portal-personaltools {
+	clear:both;
+}
+
+/**** LEFT NAVIGATION ****/
+
+.portletNavigationTree {
+    padding: 0; 
+	background-color:#9d8d6b;
+}
+
+.portletNavigationTree .portletHeader {
+	display:none;
+}
+
+.navTreeItem {
+    padding: 0;
+    margin: 0;
+}
+
+.navTreeItem a,
+dd.portletItem .navTreeItem a {
+	border-width:0px 0px 1px 0px;
+    border-bottom: 1px solid #bbaf98;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+	color:#fff6ab !important;
+	text-transform:uppercase;
+}
+
+.navTreeItem a:hover,
+dd.portletItem .navTreeItem a:hover {
+    background-color:transparent;
+    color: #fff !important;
+	border-width:0px 0px 1px 0px;
+    border-bottom: 1px solid #bbaf98;
+}
+
+li.navTreeItem a.navTreeCurrentItem {
+    background-color: transparent;
+	border-width:0px 0px 1px 0px !important;
+    border-bottom: 1px solid #bbaf98 !important;
+	color:#fff !important;
+}
+
+ul.navTree .navTreeLevel1 a {
+	text-transform:uppercase !important;
+}
+
+/**** BREADCRUMBS ****/
+
+#portal-breadcrumbs {
+	border-bottom:none;
+	text-transform:capitalize;
+	padding-left:1em;
+}
+
+.section-front-page #portal-breadcrumbs {
+	display:none;
+}
+
+/**** FOOTER AND COLOPHON AREA ****/
+
+#footer-colophon-wrapper {
+	background-color:#56492e;
+	width:733px;
+	height:60px;
+	margin-top:5px;
+}
+
+#portal-footer {
+	color:#cccc99;
+	width:40%;
+	text-align:left;
+	float:left;
+	background-color:transparent;
+	border:0;
+	padding-left:1em;
+	margin-top:1em;
+}
+
+#portal-footer a {
+	color:#cccc99 !important;
+	text-decoration:underline;
+}
+
+#portal-colophon {
+	color:#cccc99;
+	text-align:right;
+	width:40%;
+	float:right;
+	padding-right:1em;
+	margin-top:1em;
+}
+
+#portal-colophon a {
+	color:#cccc99 !important;
+	text-decoration:underline;
+}
+
+/**** HOMEPAGE TEMPLATE ****/
+
+.slot1image, .slot2image, .slot3image {
+	background-color:#7d7564;
+	padding:3px;
+}
+
+.folder-listing {
+	padding:5px 5px 20px 5px;
+}
+
+td#home-cell-one, td#home-cell-two, td#home-cell-three {
+	vertical-align:top;
+}
+
+/**** KUPU STYLES FOR HOMEPAGE TABLE ****/
+
+/** we also need to configure kupu in the site setup area **/
+
+.homeTable {
+    width: 100%;
+    margin-bottom: 0.5em;
+    border-spacing: 5px;
+    border-collapse: separate;
+}
+.homeTable th {
+    padding: 0.7em 0.8em;
+    font-size: 1.2em;
+    color: #fff;
+    text-align: left;
+    background-color: #ff6600;
+}
+.homeTable th a {
+    color: #fff;
+}
+.homeTable td {
+    padding: 0.5em 0 0;
+    border-top: 3px solid #ccc;
+    font-size: 0.9em;
+    vertical-align:top;
+}
+.homeTable td a {
+    text-decoration: underline;
+    border: 0;
+}
+.homeTable ul {
+    padding: 0.5em 0.7em 1em 1em;
+}
+.homeTable tbody tr td ul li {
+    margin:0;
+}
+.homeTable ul li a,
+.homeTable ul li a:hover,
+.homeTable ul li a:visited {
+    color: &dtml-fontColor;;
+}
+.homeTable p {
+    margin: 0;
+    padding: 0.5em 0.3em 0.3em 2.5em;
+}
+
+p.orangeText {
+	color:#cd8c04;
+}
+
+/* YOUR CSS RULES STOP HERE */
+
+/* </dtml-with> */
+
+/* Latest version of the documentation on pre-defined properties from Plone 
+   can be found in CMFPlone/skins/plone_styles/ploneCustom.css.dtml */
+

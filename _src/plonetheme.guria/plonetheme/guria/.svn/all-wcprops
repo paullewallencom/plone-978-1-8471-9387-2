@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/collective/!svn/ver/88263/plonetheme.guria/trunk/plonetheme/guria
+END
+version.txt
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/collective/!svn/ver/85863/plonetheme.guria/trunk/plonetheme/guria/version.txt
+END
+configure.zcml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/collective/!svn/ver/85863/plonetheme.guria/trunk/plonetheme/guria/configure.zcml
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/collective/!svn/ver/85863/plonetheme.guria/trunk/plonetheme/guria/__init__.py
+END
+profiles.zcml
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/collective/!svn/ver/88263/plonetheme.guria/trunk/plonetheme/guria/profiles.zcml
+END
+setuphandlers.py
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/collective/!svn/ver/85863/plonetheme.guria/trunk/plonetheme/guria/setuphandlers.py
+END
+tests.py
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/collective/!svn/ver/85863/plonetheme.guria/trunk/plonetheme/guria/tests.py
+END
+skins.zcml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/collective/!svn/ver/85863/plonetheme.guria/trunk/plonetheme/guria/skins.zcml
+END

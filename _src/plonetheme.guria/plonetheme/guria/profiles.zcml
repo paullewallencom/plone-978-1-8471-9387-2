@@ -1,0 +1,14 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="plonetheme.guria">
+
+  <genericsetup:registerProfile
+      name="default"
+      title="Guria Theme for the Plone Theming Book"
+      directory="profiles/default"
+      description='Extension profile for the "Guria Theme for the Plone Theming Book" Plone theme.'
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+</configure>

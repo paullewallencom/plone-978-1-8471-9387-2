@@ -1,0 +1,47 @@
+title:string=guria's color, font, logo and border defaults
+
+plone_skin:string=guria
+
+logoName:string=logo.gif
+
+fontFamily:string="Lucida Grande", Verdana, Lucida, Helvetica, Arial, sans-serif
+fontBaseSize:string=69%
+fontColor:string=Black
+fontSmallSize:string=85%
+
+backgroundColor:string=#56492e
+
+linkColor:string=#2e5256
+linkActiveColor:string=Red
+linkVisitedColor:string=Purple
+
+borderWidth:string=1px
+borderStyle:string=solid
+borderStyleAnnotations:string=dashed
+
+globalBorderColor:string=#79715f
+globalBackgroundColor:string=#ffefca
+globalFontColor:string=#79715f
+
+headingFontFamily:string="Lucida Grande", Verdana, Lucida, Helvetica, Arial, sans-serif
+
+contentViewBorderColor:string=#79715f
+contentViewBackgroundColor:string=#ffefca
+contentViewFontColor:string=#79715f
+
+inputFontColor:string=Black
+
+textTransform:string=lowercase
+
+evenRowBackgroundColor:string=transparent
+oddRowBackgroundColor:string=transparent
+
+notifyBorderColor:string=#ffa500
+notifyBackgroundColor:string=#ffce7b
+
+discreetColor:string=#76797c
+helpBackgroundColor:string=#ffffe1
+
+portalMinWidth:string=70em
+columnOneWidth:string=195px
+columnTwoWidth:string=195px

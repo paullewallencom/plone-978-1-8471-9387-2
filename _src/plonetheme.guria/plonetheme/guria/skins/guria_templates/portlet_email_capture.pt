@@ -1,0 +1,55 @@
+<html xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      i18n:domain="onenorthwest">
+<body>
+<div metal:define-macro="portlet">
+
+    <dl class="portlet" id="portlet-email-capture">
+
+        <dt class="portletHeader">
+            <span class="portletTopLeft"></span>
+            <span i18n:translate="box_email_capture">Updates by Email</span>
+            <span class="portletTopRight"></span>
+        </dt>
+        
+        <dd class="portletItem even">
+
+			<div i18n:translate="box_email_capture_flappage">Enter your email address to receive our
+			                        e-newsletter</div>
+		 	<form method="POST"
+				  tal:attributes="action string:$portal_url/full_signup;">
+
+			   <input type="text"
+                      name="contact_email"
+                      size="12"
+                      tal:define="your_email python:context.translate('box_your_email', domain='onenorthwest', default='Your email')"
+                      tal:attributes="onFocus python:'if(this.value==\'%s\'){this.value=\'\'}' % your_email;
+                                      onBlur python:'if(this.value==\'\'){this.value=\'%s\'}'  % your_email;
+                                      value your_email"
+                       />
+
+			   <input class="emailSubmit"
+			          type="submit"
+			          name="submit"
+			          value="go"
+			          i18n:attributes="value box_email_capture_go_button"/>
+
+               <input type="hidden"
+                      name="referralAddress"
+                      tal:attributes="value request/URL" />
+		  </form>
+
+        </dd>
+
+        <dd class="portletFooter">
+            <a href=""
+               tal:attributes="href string:${portal_url}/about/privacy"
+               i18n:translate="box_privacy_policy">Privacy Policy</a>
+            <span class="portletBottomLeft"></span>
+            <span class="portletBottomRight"></span>
+        </dd>
+    </dl>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,222 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="here/main_template/macros/master"
+      i18n:domain="plone">
+<body>
+
+<metal:main fill-slot="main">
+    <tal:main-macro metal:define-macro="main"
+           tal:define="kssClassesView context/@@kss_field_decorator_view;
+                       getKssClasses nocall:kssClassesView/getKssClassesInlineEditable;
+                       templateId template/getId;
+					   hp_view context/@@hp_view;
+                       text here/getText;">
+
+        <div tal:replace="structure provider:plone.abovecontenttitle" />
+
+        <h1 class="documentFirstHeading"> 
+            <metal:field use-macro="python:here.widget('title', mode='view')">
+            Title
+            </metal:field>
+        </h1>
+
+        <div tal:replace="structure provider:plone.belowcontenttitle" />
+
+        <p class="documentDescription">
+            <metal:field use-macro="python:here.widget('description', mode='view')">
+            Description
+            </metal:field>
+        </p>
+
+        <p tal:condition="python: not text and is_editable"
+           i18n:translate="no_body_text"
+           class="discreet">
+            This item does not have any body text, click the edit tab to change it.
+        </p>
+
+        <metal:field use-macro="python:here.widget('text', mode='view')">
+        Body text
+        </metal:field>
+
+<tbody>
+<table>
+	<tr>
+		<td id="home-cell-one"
+            tal:define="items hp_view/getSlot1Items"
+            tal:condition="items">
+            <div class="cell-wrapper">
+                <th class="hiddenStructure">Column One</th><span class="col1"></span>
+
+                <img tal:define="img hp_view/getSlot1Image"
+                     tal:condition="img"
+                     tal:attributes="src img"
+					 class="slot1image"
+                     height="139"
+                     width="167" />
+                
+                <div class="folder-listing"
+                     tal:repeat="item items">
+
+                    <tal:slot
+                        tal:define="is_in_collection python:not item.getId().startswith('slot')">
+
+                        <a class="tile"
+                           tal:condition="is_in_collection"
+                           tal:content="item/Title"
+                           tal:attributes="href item/absolute_url">
+                            [Title]
+                        </a>
+
+                        <tal:collection_item tal:condition="is_in_collection">
+                            <span tal:condition="item/Description"
+                                  tal:content="item/Description">[Description]</span>
+                            <a tal:attributes="href item/absolute_url">Read more...</a>
+                        </tal:collection_item>
+                    
+                        <tal:document tal:condition="python:not is_in_collection">
+                            <span tal:content="structure item/getText|nothing"/>
+                        
+                            <tal:edit_link tal:condition="python:item.portal_type=='Document' and checkPermission('Modify portal content', item)">
+                                <a href="#"
+                                   class="edit-link" 
+                                   tal:attributes="href string:${item/absolute_url}/edit">
+                                   Edit...
+                                </a>
+                            </tal:edit_link>
+                        </tal:document>
+                        
+                    </tal:slot>
+                </div>
+            </div>
+        </td>
+
+
+
+		<td id="home-cell-two"
+            tal:define="items hp_view/getSlot2Items"
+            tal:condition="items">
+            <div class="cell-wrapper">
+                <th class="hiddenStructure">Column Two</th><span class="col2"></span>
+
+                <img tal:define="img hp_view/getSlot2Image"
+                     tal:condition="img"
+                     tal:attributes="src img"
+					 class="slot2image"
+                     height="139"
+                     width="167" />
+                
+                <div class="folder-listing"
+                     tal:repeat="item items">
+
+                    <tal:slot
+                        tal:define="is_in_collection python:not item.getId().startswith('slot')">
+
+                        <a class="tile"
+                           tal:condition="is_in_collection"
+                           tal:content="item/Title"
+                           tal:attributes="href item/absolute_url">
+                            [Title]
+                        </a>
+
+                        <tal:collection_item tal:condition="is_in_collection">
+                            <span tal:condition="item/Description"
+                                  tal:content="item/Description">[Description]</span>
+                            <a tal:attributes="href item/absolute_url">Read more...</a>
+                        </tal:collection_item>
+                    
+                        <tal:document tal:condition="python:not is_in_collection">
+                            <span tal:content="structure item/getText|nothing"/>
+                        
+                            <tal:edit_link tal:condition="python:item.portal_type=='Document' and checkPermission('Modify portal content', item)">
+                                <a href="#"
+                                   class="edit-link" 
+                                   tal:attributes="href string:${item/absolute_url}/edit">
+                                   Edit...
+                                </a>
+                            </tal:edit_link>
+                        </tal:document>
+                        
+                    </tal:slot>
+                </div>
+            </div>
+        </td>
+
+
+		<td id="home-cell-three"
+            tal:define="items hp_view/getSlot3Items"
+            tal:condition="items">
+            <div class="cell-wrapper">
+                <th class="hiddenStructure">Column Three</th><span class="col3"></span>
+
+                <img tal:define="img hp_view/getSlot3Image"
+                     tal:condition="img"
+                     tal:attributes="src img"
+					 class="slot3image"
+                     height="139"
+                     width="167" />
+                
+                <div class="folder-listing"
+                     tal:repeat="item items">
+
+                    <tal:slot
+                        tal:define="is_in_collection python:not item.getId().startswith('slot')">
+
+                        <a class="tile"
+                           tal:condition="is_in_collection"
+                           tal:content="item/Title"
+                           tal:attributes="href item/absolute_url">
+                            [Title]
+                        </a>
+
+                        <tal:collection_item tal:condition="is_in_collection">
+                            <span tal:condition="item/Description"
+                                  tal:content="item/Description">[Description]</span>
+                            <a tal:attributes="href item/absolute_url">Read more...</a>
+                        </tal:collection_item>
+                    
+                        <tal:document tal:condition="python:not is_in_collection">
+                            <span tal:content="structure item/getText|nothing"/>
+                        
+                            <tal:edit_link tal:condition="python:item.portal_type=='Document' and checkPermission('Modify portal content', item)">
+                                <a href="#"
+                                   class="edit-link" 
+                                   tal:attributes="href string:${item/absolute_url}/edit">
+                                   Edit...
+                                </a>
+                            </tal:edit_link>
+                        </tal:document>
+                        
+                    </tal:slot>
+                </div>
+            </div>
+        </td>
+
+
+	</tr>
+</table>
+</tbody>
+
+
+
+
+
+<!-- suppressing this next bit because it seems to only contain the text about this site being available in presentation mode. we don't plan on using this. -->
+
+<!--        <div tal:replace="structure provider:plone.abovecontentbody" /> -->
+
+
+
+        <div metal:use-macro="here/document_relateditems/macros/relatedItems">
+            show related items if they exist
+        </div>
+    
+        <div tal:replace="structure provider:plone.belowcontentbody" />
+
+    </tal:main-macro>
+</metal:main>
+
+</body>
+</html>

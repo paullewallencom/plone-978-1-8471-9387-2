@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/collective/!svn/ver/88263/plonetheme.guria/trunk
+END
+setup.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/collective/!svn/ver/85863/plonetheme.guria/trunk/setup.py
+END
+plonetheme.guria-configure.zcml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/collective/!svn/ver/85863/plonetheme.guria/trunk/plonetheme.guria-configure.zcml
+END
+MANIFEST.in
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/collective/!svn/ver/85863/plonetheme.guria/trunk/MANIFEST.in
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/collective/!svn/ver/85863/plonetheme.guria/trunk/README.txt
+END
+setup.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/collective/!svn/ver/85863/plonetheme.guria/trunk/setup.cfg
+END

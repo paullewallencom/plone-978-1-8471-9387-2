@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/collective/!svn/ver/88263/plonetheme.guria/trunk/plonetheme/guria/skins/guria_templates
+END
+homepage_view.pt.metadata
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/collective/!svn/ver/85863/plonetheme.guria/trunk/plonetheme/guria/skins/guria_templates/homepage_view.pt.metadata
+END
+homepage_view.pt
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/collective/!svn/ver/88176/plonetheme.guria/trunk/plonetheme/guria/skins/guria_templates/homepage_view.pt
+END
+main_template.pt
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/collective/!svn/ver/85863/plonetheme.guria/trunk/plonetheme/guria/skins/guria_templates/main_template.pt
+END
+getSectionFromURL.py
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/collective/!svn/ver/85863/plonetheme.guria/trunk/plonetheme/guria/skins/guria_templates/getSectionFromURL.py
+END
+homepage2_view.pt.metadata
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/collective/!svn/ver/85863/plonetheme.guria/trunk/plonetheme/guria/skins/guria_templates/homepage2_view.pt.metadata
+END
+homepage2_view.pt
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/collective/!svn/ver/88176/plonetheme.guria/trunk/plonetheme/guria/skins/guria_templates/homepage2_view.pt
+END
+getSiteBanners.py
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/collective/!svn/ver/85863/plonetheme.guria/trunk/plonetheme/guria/skins/guria_templates/getSiteBanners.py
+END
+portlet_email_capture.pt
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/collective/!svn/ver/85863/plonetheme.guria/trunk/plonetheme/guria/skins/guria_templates/portlet_email_capture.pt
+END
+section_banners.css.pt
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/collective/!svn/ver/85863/plonetheme.guria/trunk/plonetheme/guria/skins/guria_templates/section_banners.css.pt
+END
+CONTENT.txt
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/collective/!svn/ver/88263/plonetheme.guria/trunk/plonetheme/guria/skins/guria_templates/CONTENT.txt
+END

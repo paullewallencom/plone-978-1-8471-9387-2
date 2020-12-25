@@ -1,0 +1,22 @@
+<tal:comment tal:condition="nothing">
+    Removing everything to tone down the nerdyness a notch. Altered the colophon to also show a copyright.
+</tal:comment>
+
+<div id="portal-colophon" metal:define-macro="colophon" i18n:domain="onenorthwest">
+
+    <span i18n:translate="txt_powered_by_plone" id="powered-by-plone">
+        powered by 
+        <span i18n:name="plone_org_link">
+            <a href="http://plone.org"
+               i18n:attributes="title title_this_site_is_plone"
+               title="This website is built on the Plone Content Management System. Click to learn more.">Plone</a>
+        </span>
+    </span>
+    |
+    <span i18n:translate="txt_copyright" id="copyright">
+        <span i18n:name="bef_link">
+            Copyright 2008
+        </span>
+    </span>
+
+</div>

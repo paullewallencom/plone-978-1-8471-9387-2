@@ -1,0 +1,71 @@
+<div id="portal-searchbox"
+     i18n:domain="plone">
+    <form name="searchform"
+          action="search"
+          tal:attributes="action string:${view/portal_url}/search">
+
+        <label for="searchGadget" class="hiddenStructure"
+                    i18n:translate="text_search">Search Site</label>
+
+        <div class="LSBox">
+	
+	<!-- shorten the width of the search box --> 
+	
+        <input name="SearchableText"
+               type="text"
+               size="14"
+               value=""
+               title="Search Site"
+               accesskey="4"
+               i18n:attributes="title title_search_site;"
+               tal:attributes="value request/SearchableText|nothing;
+                               id view/search_input_id"
+               class="inputLabel" />
+
+	<!-- use an actual search button instead of an input field -->
+
+
+  <!--      <input class="searchButton"
+               type="submit"
+               value="Search"
+               i18n:attributes="value label_search;" /> -->
+
+			<input type="image"
+					class="searchButton"
+					name="submit"
+					alt="submit" 
+					value="Search" 
+					tal:attributes="src string:${view/portal_url}/search_btn.gif;" />
+
+
+    <!-- this bit will be hidden with CSS -->
+        <div class="searchSection">
+            <input id="searchbox_currentfolder_only" 
+                   class="noborder"
+                   type="checkbox" 
+                   name="path" 
+                   tal:attributes="value view/folder_path"
+                   />
+            <label for="searchbox_currentfolder_only" 
+                   i18n:translate="label_searchbox_currentfolder_only"
+                   style="cursor: pointer">
+                only in current section
+            </label>
+        </div>
+	<!-- end hiding -->
+
+        <div class="LSResult" id="LSResult" style=""><div class="LSShadow" id="LSShadow"></div></div>
+        </div>
+    </form>
+
+    <div id="portal-advanced-search"
+         class="hiddenStructure">
+        <a href="#"
+           tal:attributes="href string:${view/portal_url}/search_form"
+           i18n:translate="label_advanced_search"
+           accesskey="5">
+            Advanced Search&hellip;
+        </a>
+    </div>
+
+</div>

@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/collective/!svn/ver/88263/plonetheme.guria/trunk/plonetheme/guria/browser
+END
+footer.pt
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/collective/!svn/ver/88176/plonetheme.guria/trunk/plonetheme/guria/browser/footer.pt
+END
+searchbox.pt
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/collective/!svn/ver/88176/plonetheme.guria/trunk/plonetheme/guria/browser/searchbox.pt
+END
+viewlet.pt
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/collective/!svn/ver/85863/plonetheme.guria/trunk/plonetheme/guria/browser/viewlet.pt
+END
+logo.pt
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/collective/!svn/ver/88263/plonetheme.guria/trunk/plonetheme/guria/browser/logo.pt
+END
+path_bar.pt
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/collective/!svn/ver/88176/plonetheme.guria/trunk/plonetheme/guria/browser/path_bar.pt
+END
+colophon.pt
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/collective/!svn/ver/85863/plonetheme.guria/trunk/plonetheme/guria/browser/colophon.pt
+END
+configure.zcml
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/collective/!svn/ver/88263/plonetheme.guria/trunk/plonetheme/guria/browser/configure.zcml
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/collective/!svn/ver/85863/plonetheme.guria/trunk/plonetheme/guria/browser/__init__.py
+END
+site_actions.pt
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/collective/!svn/ver/88263/plonetheme.guria/trunk/plonetheme/guria/browser/site_actions.pt
+END
+viewlets.py
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/collective/!svn/ver/88263/plonetheme.guria/trunk/plonetheme/guria/browser/viewlets.py
+END
+interfaces.py
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/collective/!svn/ver/85863/plonetheme.guria/trunk/plonetheme/guria/browser/interfaces.py
+END
+homepage.py
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/collective/!svn/ver/85863/plonetheme.guria/trunk/plonetheme/guria/browser/homepage.py
+END

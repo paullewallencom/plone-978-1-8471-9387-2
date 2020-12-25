@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<import-steps>
+  <import-step id="plonetheme.guria.various"
+               version="20080526-01"
+               handler="plonetheme.guria.setuphandlers.setupVarious"
+               title="guria: miscellaneous import steps">
+    <dependency step="skins" />
+    Various import steps that are not handled by GS import/export
+    handlers.
+  </import-step>
+</import-steps>

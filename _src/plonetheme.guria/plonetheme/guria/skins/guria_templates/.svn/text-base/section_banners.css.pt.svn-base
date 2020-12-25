@@ -1,0 +1,14 @@
+/* Generated css for changing site banners */
+
+<tal:stylesheet 
+    define="banners context/getSiteBanners"
+    condition="banners">
+
+<tal:banner repeat="banner banners">
+<tal:section replace="string:.section-${banner/section}">.section-[section]</tal:section> #banner {
+    background-image: url(<tal:image replace="banner/url">[img url]</tal:image>);
+}
+
+</tal:banner>
+
+</tal:stylesheet>
